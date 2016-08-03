@@ -15,7 +15,6 @@ class UsersController < ApplicationController
     # @posts= Post.find(:all, :conditions => {:user_id => params[:id]})
   
     @posts=Post.where(:user_id => params[:id])
-    binding.pry
     render :show
   end
 

@@ -13,3 +13,30 @@
  *= require_tree .
  *= require_self
  */
+
+html,
+body {
+    height: 100%;
+}
+
+#welcomebackground {
+    background-image: url("http://www.100besteverything.com/best-cities/i-1-1603_denver-wp1.jpg");
+    background-color: #000;
+    position: absolute;
+    display: block;
+    margin-top: -110px;
+    margin-left: -50px;
+    z-index: -100;
+    background-size:cover;
+    background-position: center center;
+    height: 125%;
+    width: 105%;
+}
+
+.navbar navbar-default {
+    position: relative;
+    text-shadow: 0 0 4px #000;
+}
+a {
+    color: #fff;
+}

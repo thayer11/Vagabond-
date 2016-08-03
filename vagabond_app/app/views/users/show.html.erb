@@ -25,5 +25,12 @@
   <%= @user.join_date %>
 </p>
 
+<h1>Posts</h1>
+<ul>
+  <% @posts.each do |posts| %>
+  <li><%=posts.title%></li>
+  <%end%>
+</ul>
+
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>

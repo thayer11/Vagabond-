@@ -3,8 +3,9 @@
 #newuser{
 	@include box_container_form();
 	background-color: $form_background_color;
-	height: 30em;
+	height: 33em;
 	margin-bottom: 80px;
+    
 }
 .user_information{
 	color: black;
@@ -12,4 +13,25 @@
 	background-color: $form_background_color;
 	height: 24em;
 	margin-bottom: 80px;
+}
+.field {
+    color:#000;
+    text-shadow: 0px 0px 2px #FFF;
+}
+.actions{
+    color: #000;
+}
+#showuser{
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid #000;
+    color:white;
+    a{
+        color: chartreuse;
+    }
+   
+}
+thead tr th{
+    padding: 15px;
+        
 }

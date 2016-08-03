@@ -12,6 +12,9 @@ class UsersController < ApplicationController
   # GET /users/1.json
   def show
     @user=User.find_by_id(params[:id])
+    # @posts= Post.find(:all, :conditions => {:user_id => params[:id]})
+  
+    @posts=Post.where(:user_id => params[:id])
     render :show
   end
 

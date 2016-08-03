@@ -6,6 +6,7 @@ class SessionsController < ApplicationController
 	end
 
 	def create 
+		binding.pry
 		@user = User.confirm(user_params)
 		if @user 
 			login(@user)

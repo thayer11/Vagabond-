@@ -1,4 +1,5 @@
-class User < ApplicationRecord
+class User < ActiveRecord::Base
+	validates :email, presence: true, uniqueness: true
 	has_many :posts
 	has_secure_password
 

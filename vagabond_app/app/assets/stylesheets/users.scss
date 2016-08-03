@@ -1,3 +1,15 @@
-// Place all the styles related to the users controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+@import 'sessions';
+
+#newuser{
+	@include box_container_form();
+	background-color: $form_background_color;
+	height: 30em;
+	margin-bottom: 80px;
+}
+.user_information{
+	color: black;
+	@include box_container_form();
+	background-color: $form_background_color;
+	height: 24em;
+	margin-bottom: 80px;
+}

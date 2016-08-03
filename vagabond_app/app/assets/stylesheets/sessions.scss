@@ -1,3 +1,24 @@
-// Place all the styles related to the sessions controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+$grey: #000;
+$form_borders: 1px solid black;
+$form_background_color: rgba(0, 0, 0, 0.5);
+
+@mixin box_container_form {
+	width: 20em;
+	background-color: $grey;
+	border: $form_borders;
+	margin: auto;
+	text-align: center;
+	color: white;
+	padding: 5px;
+	font-size: 18px;
+	height: 30%;
+	text-shadow: 2px 2px 4px #000;
+}	
+
+#login{
+	@include box_container_form();
+	background-color: $form_background_color;
+		h1{
+			padding-bottom: 10px;
+		}
+}

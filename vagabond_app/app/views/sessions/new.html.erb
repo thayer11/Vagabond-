@@ -1,4 +1,6 @@
-<%= form_for @user, url:'/sessions', method: 'post' do |f| %>
+<div id="login">
+<h1>Login</h1>
+ <%= form_for @user, url:'/sessions', method: 'post' do |f| %>
 
   <div class="field">
     <%= f.label :email %>
@@ -16,4 +18,6 @@
     <%= f.submit %>
   </div>
 
-<% end %>
+<% end %> 
+
+</div>

@@ -1,3 +1,11 @@
+<style type="text/css">
+	#welcomebackground{
+		background-image: url(<%= @city.img_url %>);
+	}
+</style>
+
+<div id="cityInfo">
+
 <p id="notice"><%= notice %></p>
 
 <p>
@@ -10,10 +18,7 @@
   <%= @city.description %>
 </p>
 
-<p>
-  <strong>Img url:</strong>
-  <%= @city.img_url %>
-</p>
-
 <%= link_to 'Edit', edit_city_path(@city) %> |
 <%= link_to 'Back', cities_path %>
+
+</div>

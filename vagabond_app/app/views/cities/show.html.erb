@@ -24,8 +24,9 @@
     <li><%= link_to "#{posts.title}", post_path(posts.id), method: :get %></a></li>
     <%end%>
   </ul>
-  
-<%= link_to 'Edit', edit_city_path(@city) %> |
+
+<%= button_to "Add new Post", new_post_path, method: :get, params: {city_id: @city.id, user_id: session[:user_id]} %>
+<%= link_to 'Edit', edit_city_path(@city) %> 
 <%= link_to 'Back', cities_path %>
 
 </div>

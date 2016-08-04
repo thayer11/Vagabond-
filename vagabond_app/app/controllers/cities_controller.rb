@@ -10,6 +10,9 @@ class CitiesController < ApplicationController
   # GET /cities/1
   # GET /cities/1.json
   def show
+    @posts = Post.where(:city_id => params[:id])
+    @city = City.find_by_id(params[:id])
+    render :show
   end
 
   # GET /cities/new

@@ -20,8 +20,9 @@ body {
 }
 
 #welcomebackground {
-    background-color: purple;
+
     position: absolute;
+    background-image: url("https://2104310a1da50059d9c5-d1823d6f516b5299e7df5375e9cf45d2.ssl.cf2.rackcdn.com/2013/08/abstract-stripes.jpg");
     display: block;
     margin-top: -110px;
     margin-left: -50px;

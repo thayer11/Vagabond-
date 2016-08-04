@@ -3,7 +3,20 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @import 'sessions';
 
-.post{
-
+#post{
 	@include box_container_form();
+    background-color: $form_background_color;
+}
+
+#newpost{
+   width: 20em;
+	background-color: $grey;
+	border: $form_borders;
+	margin: auto;
+	text-align: center;
+	color: white;
+	padding: 15px;
+	font-size: 18px;
+	text-shadow: 2px 2px 4px #000;
+    background-color: rgba(0, 0, 0, 0.5);
 }

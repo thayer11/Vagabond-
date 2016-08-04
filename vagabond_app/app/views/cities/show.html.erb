@@ -1,11 +1,11 @@
 <style type="text/css">
 	#welcomebackground{
-		background-image: url(<%= @city.img_url %>);
+		background-image: url(<%= @city.img_url %> );
 	}
 </style>
 
 <div id="cityInfo">
-
+<h1>Posts</h1>
 <p id="notice"><%= notice %></p>
 
 <p>
@@ -18,15 +18,16 @@
   <%= @city.description %>
 </p>
 
-<h1>Posts</h1>
+
   <ul>
     <% @posts.each do |posts| %>
     <li><%= link_to "#{posts.title}", post_path(posts.id), method: :get %></a></li>
     <%end%>
   </ul>
-
+<div id="addpostbutton">
 <%= button_to "Add new Post", new_post_path, method: :get, params: {city_id: @city.id, user_id: session[:user_id]} %>
-<%= link_to 'Edit', edit_city_path(@city) %> 
+</div><br />
+<%= link_to 'Edit', edit_city_path(@city) %> |
 <%= link_to 'Back', cities_path %>
 
 </div>

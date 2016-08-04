@@ -28,3 +28,32 @@ $form_background_color: rgba(0, 0, 0, 0.5);
 			padding-bottom: 10px;
 		}
 }
+p{
+    font-size: 18px !important; 
+}
+#addpostbutton{
+    color: #000;  
+}
+#editingcity {
+    @include box_container_form();
+	background-color: $form_background_color;
+    
+}
+#indexcity{
+   
+	background-color: rgba(0, 0, 0, 0.5);
+	border: 1px solid black;
+	
+	color: white;
+	padding: 5px;
+	font-size: 18px;
+	text-shadow: 2px 2px 4px #000;
+    a{
+    color: chartreuse;
+}
+}
+#newcity{
+     @include box_container_form();
+	background-color: $form_background_color;
+    
+}

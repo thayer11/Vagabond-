@@ -20,8 +20,7 @@ body {
 }
 
 #welcomebackground {
-    background-color: #000;
-    background-image: url("https://w-dog.net/wallpapers/9/1/423143411933312/denver-mile-high-city-roxboroughs-geological-wonders-roxborough-state-park.jpg");
+    background-color: purple;
     position: absolute;
     display: block;
     margin-top: -110px;

@@ -1,6 +1,6 @@
 $grey: #000;
 $form_borders: 1px solid black;
-$form_background_color: rgba(0, 0, 0, 0.5);
+$form_background_color: rgba(255, 255, 255, 0.2);
 
 @mixin box_container_form {
 	width: 20em;
@@ -11,8 +11,8 @@ $form_background_color: rgba(0, 0, 0, 0.5);
 	color: white;
 	padding: 5px;
 	font-size: 18px;
-	height: 40%;
-	text-shadow: 2px 2px 4px #000;
+	height: auto;
+	
 }	
 
 #login{

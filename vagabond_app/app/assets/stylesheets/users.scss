@@ -7,6 +7,10 @@
 	margin-bottom: 80px;
     
 }
+li{
+    list-style-type: none;
+    color: white;
+}
 .user_information{
 	color: black;
 	@include box_container_form();
